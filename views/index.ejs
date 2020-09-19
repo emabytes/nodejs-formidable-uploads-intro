@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Formidable_Not really</h1>
+    <form action="/blogs/upload" enctype="multipart/form-data" method="post">
+        <div>File: <input type="file" name="someExpressFiles" multiple="multiple" /></div>
+        <input type="submit" value="Upload" />
+    </form>
+
+    <section>
+        <img src="https://source.unsplash.com/random/200x200?0" alt="">
+        <img src="https://source.unsplash.com/random/200x200?1" alt="">
+        <img src="https://source.unsplash.com/random/200x200?2" alt="">
+        <img src="https://source.unsplash.com/random/200x200?3" alt="">
+        <img src="/test.jpeg" alt="">
+        <img src="/upload_1aac572e2e1df5fd41992e260a734c94.jpg" alt="">
+        <% pathPictures.forEach(element => { %>
+            <img src="/<%=element  %> " alt="">
+            <% }) %>
+    </section>
+</body>
+
+</html>
